@@ -1,0 +1,20 @@
+params:
+  objective: regression
+  metric: rmse
+  verbose: -1
+  boosting_type: gbdt
+  learning_rate: 0.05
+  num_leaves: 31
+  min_child_samples: 20
+  max_depth: -1
+  subsample_freq: 0
+  bagging_seed: 0
+  feature_fraction: 0.9
+  bagging_fraction: 0.8
+  reg_alpha: 0.1
+  reg_lambda: 0.1
+  seed: ${seed}
+
+early_stopping_rounds: 100
+log_evaluation: 100
+num_boost_round: 10000000

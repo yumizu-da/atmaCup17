@@ -1,0 +1,8 @@
+{
+	"dockerComposeFile": "../compose.yaml",
+	"service": "dev",
+	"workspaceFolder": "/workspace",
+	"containerEnv": {
+		"TZ": "Asia/Tokyo"
+	}
+}
