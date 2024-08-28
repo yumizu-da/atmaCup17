@@ -1,7 +1,7 @@
 ====== CV Score ======
-best_iteration: 271
-best_score: 1.4024475597880197
-best_score_stdv: 0.019914533558197237
+best_iteration: 215
+best_score: 1.40575977392513
+best_score_stdv: 0.028002738015912597
 
 ====== params ======
 lgb:
@@ -23,8 +23,24 @@ lgb:
   early_stopping_rounds: 100
   log_evaluation: 100
   num_boost_round: 10000000
+cb:
+  params:
+    loss_function: RMSE
+    eval_metric: RMSE
+    learning_rate: 0.05
+    depth: 5
+    max_leaves: 31
+    min_data_in_leaf: 20
+    subsample: 0.8
+    rsm: 0.8
+    l2_leaf_reg: 1
+    random_seed: 42
+    allow_writing_files: false
+  early_stopping_rounds: 100
+  log_evaluation: 100
+  num_boost_round: 10000000
 exp_number: '001'
-run_name: '20240826_115354'
+run_name: '20240828_233749'
 data:
   data_root: ../../data
   results_root: ../../results
@@ -32,7 +48,7 @@ data:
   anime_path: ../../data/anime.csv
   test_path: ../../data/test.csv
   sample_submission_path: ../../data/sample_submission.csv
-  results_dir: ../../results/001/20240826_115354
+  results_dir: ../../results/001/20240828_233749
 seed: 42
 n_splits: 5
 target: score
