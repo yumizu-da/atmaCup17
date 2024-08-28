@@ -5,6 +5,7 @@ class GroupKFoldWithSeed(KFold):
     """sklearnに用意されているGroupKFoldでseed固定ができないので, seed固定できるようにしたクラス"""
 
     def __init__(self, n_splits=5, shuffle=False, random_state=None):
+        super().__init__(n_splits=n_splits, shuffle=shuffle, random_state=random_state)
         self.kf = KFold(n_splits=n_splits, shuffle=shuffle, random_state=random_state)
 
     def split(self, X, y, groups):
