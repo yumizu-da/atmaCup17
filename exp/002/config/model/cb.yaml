@@ -1,0 +1,19 @@
+# https://catboost.ai/en/docs/references/training-parameters/
+# `allow_writing_files`はcv関数では未サポートのため, 学習時にcatboost_infoが出力される
+# https://catboost.ai/en/docs/references/training-parameters/output#description6
+params:
+  loss_function: RMSE
+  eval_metric: RMSE
+  learning_rate: 0.05
+  depth: 5
+  max_leaves: 31
+  min_data_in_leaf: 20
+  subsample: 0.8
+  rsm: 0.8
+  l2_leaf_reg: 1
+  random_seed: ${seed}
+  allow_writing_files: false
+
+early_stopping_rounds: 100
+log_evaluation: 100
+num_boost_round: 10000000
