@@ -142,3 +142,4 @@ cython_debug/
 .DS_Store
 *.csv
 *.pkl
+catboost_info/
