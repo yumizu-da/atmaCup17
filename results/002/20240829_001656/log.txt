@@ -1,7 +1,7 @@
 ====== CV Score ======
-best_iteration: 238
-best_score: 1.4116067517224322
-best_score_std: 0.021142801445784374
+best_iteration: 623
+best_score: 1.411958818800933
+best_score_std: 0.029749017357064676
 
 ====== params ======
 lgb:
@@ -40,7 +40,7 @@ cb:
   log_evaluation: 100
   num_boost_round: 10000000
 exp_number: '002'
-run_name: '20240828_224243'
+run_name: '20240829_001656'
 data:
   data_root: ../../data
   results_root: ../../results
@@ -48,7 +48,7 @@ data:
   anime_path: ../../data/anime.csv
   test_path: ../../data/test.csv
   sample_submission_path: ../../data/sample_submission.csv
-  results_dir: ../../results/002/20240828_224243
+  results_dir: ../../results/002/20240829_001656
 seed: 42
 n_splits: 5
 target: score
