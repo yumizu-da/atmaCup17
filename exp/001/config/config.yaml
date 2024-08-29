@@ -1,6 +1,5 @@
 defaults:
   - model@lgb: lgb
-  - model@cb: cb
   - _self_
 
 exp_number: base  # 実行時に書き換え
@@ -10,11 +9,11 @@ data:
   data_root: ../../data
   results_root: ../../results
   train_path: ${data.data_root}/train.csv
-  anime_path: ${data.data_root}/anime.csv
+  clothing_path: ${data.data_root}/clothing_master.csv
   test_path: ${data.data_root}/test.csv
   sample_submission_path: ${data.data_root}/sample_submission.csv
   results_dir: ${data.results_root}/${exp_number}/${run_name}
 
 seed: 42
 n_splits: 5
-target: score
+target: Recommended IND
