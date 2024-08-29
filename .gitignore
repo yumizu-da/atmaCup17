@@ -143,3 +143,4 @@ cython_debug/
 *.csv
 *.pkl
 catboost_info/
+checkpoint-*/

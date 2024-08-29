@@ -1,0 +1,6 @@
+params:
+  model_path: microsoft/deberta-v3-small
+  max_length: 256
+  metric: auc
+  steps: 50
+  target_col_class_num: 2

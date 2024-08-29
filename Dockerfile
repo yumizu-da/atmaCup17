@@ -1,11 +1,11 @@
-FROM ubuntu:24.04
+FROM nvidia/cuda:12.1.0-cudnn8-runtime-ubuntu22.04
 
 ENV TZ=Asia/Tokyo
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
-RUN apt-get update && apt-get install -y curl git make libgl1-mesa-dev libglib2.0-0 gcc && \
+RUN apt-get update && \
+    apt-get install -y curl git &&\
     apt-get upgrade -y && \
-    rm -rf /var/lib/apt/lists/* && \
     apt-get clean
 
 WORKDIR /workspace
