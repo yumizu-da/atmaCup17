@@ -76,8 +76,25 @@ quote-style = "double"
 line-ending = "auto"
 
 [tool.ruff.lint]
-
-[tool.ruff.lint.isort]
-
-[tool.mypy]
-ignore_missing_imports = true
+fixable = ["ALL"]
+unfixable = []
+select = [
+    "A",  # flake8-builtin
+    "B",  # flake8-bugbear
+    "E",  # pycodestyle error
+    "F",  # Pyflakes
+    "I",  # isort
+    "N",  # pep8-naming
+    "W",  # pycodestyle warning
+    "PL",  # Pylint
+    "UP",  # pyupgrade
+]
+ignore = [
+    "F401",  # Unused import
+    "PLR0913",  # Too many arguments
+    "PLR2004",  # Magic value used in comparison, consider replacing with a constant
+    "PLW2901",  # `for` loop variable overwritten by assignment target
+    "N803",  # Argument name should be lowercase
+    "N806",  # Variable name should be lowercase
+    "N812",  # Lowercase imported as non-lowercase
+]

@@ -1,6 +1,6 @@
 defaults:
   - model@lgb: lgb
-  - model@cb: cb
+  # - model@cb: cb
   - _self_
 
 exp_number: base  # 実行時に書き換え

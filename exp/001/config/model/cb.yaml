@@ -2,8 +2,8 @@
 # `allow_writing_files`はcv関数では未サポートのため, 学習時にcatboost_infoが出力される
 # https://catboost.ai/en/docs/references/training-parameters/output#description6
 params:
-  loss_function: RMSE
-  eval_metric: RMSE
+  loss_function: Logloss
+  eval_metric: Logloss
   learning_rate: 0.05
   depth: 5
   max_leaves: 31
