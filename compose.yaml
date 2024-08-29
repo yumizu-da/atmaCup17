@@ -1,6 +1,6 @@
 services:
   dev:
-    container_name: atma17
+    container_name: atma17_gpu
     build:
       context: .
       dockerfile: Dockerfile
@@ -13,6 +13,12 @@ services:
         source: venv
         target: /workspace/.venv
     working_dir: /workspace
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              capabilities: [ gpu ]
     tty: true
 volumes:
   venv:
