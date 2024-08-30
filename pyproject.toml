@@ -20,9 +20,10 @@ dependencies = [
     "tqdm>=4.64.1",
     "catboost>=1.2.5",
     "torch",
-    "transformers>=4.44.2",
+    "transformers[torch]>=4.44.2",
     "sentencepiece>=0.2.0",
     "protobuf>=5.28.0",
+    "datasets>=2.19.1",
 ]
 
 [tool.uv]
