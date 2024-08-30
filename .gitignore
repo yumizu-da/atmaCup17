@@ -144,3 +144,4 @@ cython_debug/
 *.pkl
 catboost_info/
 checkpoint-*/
+final/

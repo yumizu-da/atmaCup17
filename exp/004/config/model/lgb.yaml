@@ -1,0 +1,19 @@
+params:
+  objective: binary
+  metric: auc
+  verbose: -1
+  boosting_type: gbdt
+  learning_rate: 0.01
+  max_depth: 5
+  num_leaves: 31
+  min_data_in_leaf: 50
+  bagging_fraction: 0.8
+  bagging_freq: 1
+  feature_fraction: 0.8
+  lambda_l1: 0
+  lambda_l2: 1
+  seed: ${seed}
+
+early_stopping_rounds: 100
+log_evaluation: 100
+num_boost_round: 10000000
