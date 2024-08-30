@@ -142,6 +142,7 @@ cython_debug/
 .DS_Store
 *.csv
 *.pkl
+*.parquet
 catboost_info/
 
 # results
