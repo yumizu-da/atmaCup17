@@ -1,5 +1,5 @@
 params:
-  model_path: microsoft/deberta-v3-small
+  model_path: microsoft/deberta-v3-large
   metric: auc
   target_col_class_num: 3
   max_length: 192
