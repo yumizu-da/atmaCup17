@@ -143,6 +143,7 @@ cython_debug/
 *.csv
 *.pkl
 *.parquet
+*.npy
 catboost_info/
 
 # results
