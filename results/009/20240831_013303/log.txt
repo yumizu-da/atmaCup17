@@ -1,0 +1,50 @@
+====== CV Score ======
+best_score: 0.9716153158878473
+
+====== params ======
+lgb:
+  params:
+    objective: binary
+    metric: auc
+    verbose: -1
+    boosting_type: gbdt
+    learning_rate: 0.01
+    max_depth: 5
+    num_leaves: 31
+    min_data_in_leaf: 50
+    bagging_fraction: 0.8
+    bagging_freq: 1
+    feature_fraction: 0.8
+    lambda_l1: 0
+    lambda_l2: 1
+    seed: 42
+  early_stopping_rounds: 100
+  log_evaluation: 100
+  num_boost_round: 10000000
+bert:
+  params:
+    model_path: microsoft/deberta-v3-large
+    metric: auc
+    target_col_class_num: 2
+    max_length: 192
+    fp16: true
+    learning_rate: 2.0e-05
+    epochs: 2
+    per_device_train_batch_size: 8
+    per_device_eval_batch_size: 32
+    steps: 50
+    lr_scheduler_type: cosine
+    weight_decay: 0.01
+exp_number: '009'
+run_name: '20240831_013303'
+data:
+  data_root: ../../data
+  results_root: ../../results
+  train_path: ../../data/train.csv
+  clothing_path: ../../data/clothing_master.csv
+  test_path: ../../data/test.csv
+  sample_submission_path: ../../data/sample_submission.csv
+  results_dir: ../../results/009/20240831_013303
+seed: 42
+n_splits: 5
+target: Recommended IND
