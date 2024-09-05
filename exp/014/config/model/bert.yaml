@@ -1,0 +1,12 @@
+params:
+  model_path: microsoft/deberta-v3-large
+  metric: auc
+  max_length: 192
+  fp16: true
+  learning_rate: 2.0e-05
+  epochs: 2
+  per_device_train_batch_size: 8
+  per_device_eval_batch_size: 8
+  steps: 100
+  lr_scheduler_type: cosine
+  weight_decay: 0.01
