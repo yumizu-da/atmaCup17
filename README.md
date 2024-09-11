@@ -4,7 +4,7 @@
 
 ## Branches
 
-- `main`: competition終了後にDisucssionを元に解法をまとめたbranch. 実験結果詳細は`exp/README.md`に記載.
+- `main`: competition終了後にDisucssionを元に解法をまとめたbranch
 - `ueda`/`nagata`/`mizuta`: 各メンバーの個人branch. 各々の努力の跡を残っています.
 
 ## Environment
