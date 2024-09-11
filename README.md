@@ -2,6 +2,11 @@
 
 <https://www.guruguru.science/competitions/24>
 
+## Branches
+
+- `main`: competition終了後にDisucssionを元に解法をまとめたbranch. 実験結果詳細は`exp/README.md`に記載.
+- `ueda`/`nagata`/`mizuta`: 各メンバーの個人branch. 各々の努力の跡を残っています.
+
 ## Environment
 
 ### dockerコンテナ ビルド & 起動
@@ -9,16 +14,6 @@
 ```bash
 docker compose up -d --build
 ```
-
-### コンテナにアタッチ
-
-次にVScode左下の`><`ボタンより`コンテナで再度開く`でコンテナにアクセス
-
-### 拡張機能インストール
-
-無事コンテナが開いたら, 「拡張機能の推奨事項があります」という通知が出ると思います.
-この通知を許可すると, `.vscode/extensions.json`に記載されている拡張機能が自動的にインストールされます.
-もし通知が出なかった場合は, 左のメニューから`拡張機能`を選択し, `フィルターアイコン`->`推奨`‐>`インストールアイコン`を押せば一括インストールできます.
 
 ## How to use
 
